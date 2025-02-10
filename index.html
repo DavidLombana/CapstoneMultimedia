@@ -84,6 +84,34 @@
             height: auto;
             max-height: 150px; /* Adjust the size of the image */
         }
+
+        /* Content block styles */
+        .content-blocks {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 20px; /* Spacing for the blocks */
+        }
+
+        .block {
+            width: 30%; /* Each block takes up 30% of the container */
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent background for each block */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .block img {
+            width: 100%; /* Make the image take up the full width of the block */
+            height: auto;
+            max-height: 200px; /* Set a max height for the image */
+            object-fit: cover; /* Ensure the image covers the space without distortion */
+        }
+
+        .block p {
+            color: white;
+            font-size: 16px;
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
@@ -114,6 +142,27 @@
     <!-- "Our Services" Header -->
     <div class="services-header">
         <img src="files/OurServices.png" alt="Our Services">
+    </div>
+
+    <!-- Content Blocks (3 spaces for image and description) -->
+    <div class="content-blocks">
+        <div class="block">
+            <!-- Placeholder for Image -->
+            <img src="files/carrofinal.JPEG" alt="Service 1">
+            <p>Wash and Wax</p>
+        </div>
+
+        <div class="block">
+            <!-- Placeholder for Image -->
+            <img src="files/Foam.JPEG" alt="Service 2">
+            <p>Foam</p>
+        </div>
+
+        <div class="block">
+            <!-- Placeholder for Image -->
+            <img src="files/aspirado.JPEG" alt="Service 3">
+            <p>Deep Vacuum</p>
+        </div>
     </div>
 
     <!-- Google Font Import -->
