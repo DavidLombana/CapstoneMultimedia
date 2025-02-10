@@ -15,22 +15,24 @@
             color: white;
             height: 100vh; /* Full viewport height */
             display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Ensure the content starts at the top */
+            flex-direction: column; /* Stack content vertically */
         }
 
-        /* Optional: Add some padding around your content */
         .content {
             padding: 20px;
             width: 100%;
+            flex-grow: 1; /* Take up remaining space, pushing logo down */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
         }
 
-        /* Center the logo */
+        /* Logo container */
         .logo-container {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%); /* Centers the logo */
+            transform: translate(-50%, -50%); /* Center the logo */
         }
 
         .logo-container img {
@@ -63,24 +65,22 @@
     </style>
 </head>
 <body>
-    <div class="content">
-        <!-- Navigation bar -->
-        <div class="navbar">
-            <!-- Logo and Home -->
-            <div style="display: flex; align-items: center;">
-                <img src="files/Logo.png" style="height: 100px; margin-right: 20px;">
-                <a href="#">Home</a>
-            </div>
-
-            <!-- Navigation Buttons -->
-            <div>
-                <a href="#our-services">Our Services</a>
-                <a href="#appointment">Make an Appointment</a>
-                <a href="#reviews">Client Reviews</a>
-            </div>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div style="display: flex; align-items: center;">
+            <img src="files/Logo.png" style="height: 100px; margin-right: 20px;">
+            <a href="#">Home</a>
         </div>
 
-        <!-- Logo in the middle -->
+        <div>
+            <a href="#our-services">Our Services</a>
+            <a href="#appointment">Make an Appointment</a>
+            <a href="#reviews">Client Reviews</a>
+        </div>
+    </div>
+
+    <!-- Logo in the middle -->
+    <div class="content">
         <div class="logo-container">
             <img src="files/Logo.png" alt="Logo">
         </div>
@@ -92,4 +92,5 @@
     </style>
 </body>
 </html>
+
 
