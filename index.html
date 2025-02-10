@@ -12,7 +12,12 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            color: white; /* Default text color */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            text-align: center;
         }
 
         /* Optional: Add some padding around your content */
@@ -20,13 +25,15 @@
             padding: 20px;
         }
 
-        .logo-container{
-            position: absolute;
+        /* Style for the logo */
+        .logo-container {
+            position: absolute; /* Allow it to float above other content */
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
         }
+
         .logo-container img {
             max-width: 100%; /* Ensures the logo doesn't overflow */
             height: auto;
@@ -54,10 +61,9 @@
                     font-size: 24px; 
                     font-weight: bold; 
                     margin-right: 20px;">
-                    Elite Shine By David
+                    Home
                 </a>
             </div>
-
 
             <!-- Navigation Buttons -->
             <div>
@@ -93,13 +99,10 @@
             </div>
         </div>
 
-         <!-- Logo in the middle -->
-         <div class="logo-container">
+        <!-- Logo in the middle -->
+        <div class="logo-container">
             <img src="files/Logo.png" alt="Logo">
         </div>
-    </div>
-
-        <!-- Your other content goes here -->
     </div>
 
     <!-- Google Font Import -->
