@@ -19,6 +19,19 @@
         .content {
             padding: 20px;
         }
+
+        .logo-container{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .logo-container img {
+            max-width: 100%; /* Ensures the logo doesn't overflow */
+            height: auto;
+            max-height: 300px; /* Adjust the max height if you want to control the size */
+        }
     </style>
 </head>
 <body>
@@ -41,9 +54,10 @@
                     font-size: 24px; 
                     font-weight: bold; 
                     margin-right: 20px;">
-                    Home
+                    Elite Shine By David
                 </a>
             </div>
+
 
             <!-- Navigation Buttons -->
             <div>
@@ -78,6 +92,12 @@
                 </a>
             </div>
         </div>
+
+         <!-- Logo in the middle -->
+         <div class="logo-container">
+            <img src="files/Logo.png" alt="Logo">
+        </div>
+    </div>
 
         <!-- Your other content goes here -->
     </div>
