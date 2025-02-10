@@ -13,25 +13,24 @@
             background-position: center;
             background-attachment: fixed;
             color: white;
+            height: 100vh; /* Full viewport height */
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh; /* Full viewport height */
-            text-align: center;
+            align-items: flex-start; /* Ensure the content starts at the top */
         }
 
         /* Optional: Add some padding around your content */
         .content {
             padding: 20px;
+            width: 100%;
         }
 
-        /* Style for the logo */
+        /* Center the logo */
         .logo-container {
-            position: absolute; /* Allow it to float above other content */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centers the logo */
         }
 
         .logo-container img {
@@ -39,63 +38,45 @@
             height: auto;
             max-height: 300px; /* Adjust the max height if you want to control the size */
         }
-    </style>
-</head>
-<body>
-    <div class="content">
-        <!-- Navigation bar -->
-        <div style="
+
+        /* Navigation bar styles */
+        .navbar {
             display: flex;
             align-items: center;
             justify-content: space-between;
             background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
             padding: 10px 20px;
             border-radius: 8px;
-        ">
+            position: relative; /* Make sure the navbar is above other content */
+            z-index: 1;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin-right: 15px;
+            padding: 10px 15px;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- Navigation bar -->
+        <div class="navbar">
             <!-- Logo and Home -->
             <div style="display: flex; align-items: center;">
                 <img src="files/Logo.png" style="height: 100px; margin-right: 20px;">
-                <a href="#" style="
-                    text-decoration: none; 
-                    color: white; 
-                    font-size: 24px; 
-                    font-weight: bold; 
-                    margin-right: 20px;">
-                    Home
-                </a>
+                <a href="#">Home</a>
             </div>
 
             <!-- Navigation Buttons -->
             <div>
-                <a href="#our-services" style="
-                    text-decoration: none; 
-                    color: white; 
-                    margin-right: 15px; 
-                    font-size: 18px; 
-                    padding: 10px 15px; 
-                    border: 2px solid white; 
-                    border-radius: 5px;">
-                    Our Services
-                </a>
-                <a href="#appointment" style="
-                    text-decoration: none; 
-                    color: white; 
-                    margin-right: 15px; 
-                    font-size: 18px; 
-                    padding: 10px 15px; 
-                    border: 2px solid white; 
-                    border-radius: 5px;">
-                    Make an Appointment
-                </a>
-                <a href="#reviews" style="
-                    text-decoration: none; 
-                    color: white; 
-                    font-size: 18px; 
-                    padding: 10px 15px; 
-                    border: 2px solid white; 
-                    border-radius: 5px;">
-                    Client Reviews
-                </a>
+                <a href="#our-services">Our Services</a>
+                <a href="#appointment">Make an Appointment</a>
+                <a href="#reviews">Client Reviews</a>
             </div>
         </div>
 
@@ -111,3 +92,4 @@
     </style>
 </body>
 </html>
+
