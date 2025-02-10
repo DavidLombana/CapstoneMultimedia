@@ -62,6 +62,28 @@
             border: 2px solid white;
             border-radius: 5px;
         }
+                /* Divider style */
+                .divider {
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            margin-top: 50px; /* Space from the logo */
+        }
+
+        /* Section for "Our Services" header */
+        .services-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .services-header img {
+            max-width: 100%;
+            height: auto;
+            max-height: 150px; /* Adjust the size of the image */
+        }
+
     </style>
 </head>
 <body>
@@ -85,6 +107,14 @@
             <img src="files/Logo.png" alt="Logo">
         </div>
     </div>
+
+     <!-- Divider below the logo -->
+     <div class="divider"></div>
+
+     <!-- "Our Services" Header -->
+     <div class="services-header">
+         <img src="files/OurServices.png" alt="Our Services">
+     </div>
 
     <!-- Google Font Import -->
     <style>
