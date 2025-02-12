@@ -27,7 +27,17 @@
             align-items: center; /* Center content vertically */
             margin-top: 100px; /* Add margin-top to push the content down */
         }
+.block img {
+    width: 100%; 
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
 
+.block:hover img {
+    transform: scale(1.2); /* Enlarges the image on hover */
+}
         /* Logo container */
         .logo-container img {
             max-width: 100%;
@@ -144,7 +154,7 @@
         <div class="block">
             <!-- Placeholder for Image -->
             <img src="files/carrofinal.JPEG" alt="Service 1">
-            <p>Wash and Wax</p>
+            <p>Washhhh and Wax</p>
         </div>
 
         <div class="block">
@@ -159,7 +169,25 @@
             <p>Deep Vacuum</p>
         </div>
     </div>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".block img");
+    
+            images.forEach((img) => {
+                img.addEventListener("mouseenter", function () {
+                    img.style.transform = "scale(1.2)";
+                    img.style.transition = "transform 0.3s ease-in-out";
+                });
+    
+                img.addEventListener("mouseleave", function () {
+                    img.style.transform = "scale(1)";
+                });
+            });
+        });
+    </script>
+    </body>
+    </html>
+    
     <!-- Google Font Import -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
