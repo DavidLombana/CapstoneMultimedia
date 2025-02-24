@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Detailing</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <!-- Navigation bar -->
+
+    <!-- Navigation Bar -->
     <div class="navbar">
         <div style="display: flex; align-items: center;">
             <img src="files/Logo.png" style="height: 100px; margin-right: 20px;">
@@ -21,14 +22,14 @@
         </div>
     </div>
 
-    <!-- Logo in the middle -->
+    <!-- Logo Section -->
     <div class="content">
         <div class="logo-container">
             <img src="files/Logo.png" alt="Logo">
         </div>
     </div>
 
-    <!-- Divider below the logo -->
+    <!-- Divider -->
     <div class="divider"></div>
 
     <!-- "Our Services" Header -->
@@ -36,18 +37,16 @@
         <img src="files/OurServices.png" alt="Our Services">
     </div>
 
-    <!-- Content Blocks -->
+    <!-- Service Blocks -->
     <div class="content-blocks">
         <div class="block">
             <img src="files/carrofinal.JPEG" alt="Service 1">
             <p>Wash and Wax</p>
         </div>
-
         <div class="block">
             <img src="files/Foam.JPEG" alt="Service 2">
             <p>Foam</p>
         </div>
-
         <div class="block">
             <img src="files/aspirado.JPEG" alt="Service 3">
             <p>Deep Vacuum</p>
@@ -57,18 +56,19 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const images = document.querySelectorAll(".block img");
-    
+
             images.forEach((img) => {
                 img.addEventListener("mouseenter", function () {
                     img.style.transform = "scale(1.2)";
                     img.style.transition = "transform 0.3s ease-in-out";
                 });
-    
+
                 img.addEventListener("mouseleave", function () {
                     img.style.transform = "scale(1)";
                 });
             });
         });
     </script>
+
 </body>
 </html>
