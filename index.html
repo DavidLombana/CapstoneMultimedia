@@ -1,126 +1,11 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-</body>
-</html>
     <title>Car Detailing</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-image: url(files/229.jpg);
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
-            height: 100vh; /* Full viewport height */
-            display: flex;
-            flex-direction: column; /* Stack content vertically */
-        }
-
-        .content {
-            padding: 20px;
-            width: 100%;
-            flex-grow: 1; /* Take up remaining space, pushing logo down */
-            display: flex;
-            justify-content: center; /* Center content horizontally */
-            align-items: center; /* Center content vertically */
-            margin-top: 100px; /* Add margin-top to push the content down */
-        }
-.block img {
-    width: 100%; 
-    height: auto;
-    max-height: 100%;
-    object-fit: contain;
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
-}
-
-.block:hover img {
-    transform: scale(1.2); /* Enlarges the image on hover */
-}
-        /* Logo container */
-        .logo-container img {
-            max-width: 100%;
-            height: auto;
-            max-height: 300px;
-        }
-
-        /* Navigation bar styles */
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
-            padding: 10px 20px;
-            border-radius: 8px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .navbar a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            margin-right: 15px;
-            padding: 10px 15px;
-            border: 2px solid white;
-            border-radius: 5px;
-        }
-
-        /* Divider style */
-        .divider {
-            width: 100%;
-            height: 1px;
-            background-color: white;
-            margin-top: 50px; /* Space from the logo */
-        }
-
-        /* Section for "Our Services" header */
-        .services-header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 50px;
-        }
-
-        .services-header img {
-            max-width: 100%;
-            height: auto;
-            max-height: 150px;
-        }
-
-        /* Content block styles */
-        .content-blocks {
-            display: flex;
-            justify-content: space-between;
-            margin: 50px 20px;
-        }
-
-        .block {
-            width: 100%; /* Each block takes up 30% of the container */
-            background-color: rgba(0, 0, 0, 0.7); /* Transparent background for each block */
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            min-height: 300px;
-        }
-
-        .block img {
-            width: 100%; /* Make the image take up the full width of the block */
-            height: auto;
-            max-height: 100%; /* Set a max height for the image */
-            object-fit: contain; /* Ensure the image covers the space without distortion */
-        }
-
-        .block p {
-            color: white;
-            font-size: 16px;
-            margin-top: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Navigation bar -->
@@ -129,7 +14,6 @@
             <img src="files/Logo.png" style="height: 100px; margin-right: 20px;">
             <a href="#">Home</a>
         </div>
-
         <div>
             <a href="#our-services">Our Services</a>
             <a href="#appointment">Make an Appointment</a>
@@ -152,26 +36,24 @@
         <img src="files/OurServices.png" alt="Our Services">
     </div>
 
-    <!-- Content Blocks (3 spaces for image and description) -->
+    <!-- Content Blocks -->
     <div class="content-blocks">
         <div class="block">
-            <!-- Placeholder for Image -->
             <img src="files/carrofinal.JPEG" alt="Service 1">
-            <p>Washhhh and Wax</p>
+            <p>Wash and Wax</p>
         </div>
 
         <div class="block">
-            <!-- Placeholder for Image -->
             <img src="files/Foam.JPEG" alt="Service 2">
             <p>Foam</p>
         </div>
 
         <div class="block">
-            <!-- Placeholder for Image -->
             <img src="files/aspirado.JPEG" alt="Service 3">
             <p>Deep Vacuum</p>
         </div>
     </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const images = document.querySelectorAll(".block img");
@@ -188,14 +70,5 @@
             });
         });
     </script>
-    </body>
-    </html>
-    
-    <!-- Google Font Import -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-    </style>
 </body>
 </html>
-
-
