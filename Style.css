@@ -99,6 +99,7 @@ body {
 
 .block p {
     color: white;
-    font-size: 16px;
+    font-size: 24px;
     margin-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
