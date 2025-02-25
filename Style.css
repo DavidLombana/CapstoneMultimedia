@@ -111,8 +111,8 @@ html, body {
 
 /* Bigger Card */
 .card {
-    width: 100%;
-    max-width: 360px; /* Increased width */
+    width: 110%;
+    max-width: 380px; /* Increased width */
     height: 420px; /* Increased height */
     perspective: 1000px;
     position: relative;
