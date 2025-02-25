@@ -125,6 +125,40 @@ html, body {
     transform: rotateY(180deg);
 }
 
+/* Content Blocks - Fixing Grid */
+.content-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 25px; /* More spacing */
+    padding: 50px 15px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Bigger Blocks */
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Equal Sized Cards */
+.card {
+    width: 300%; /* Full width to make them equal */
+    max-width: 580px; /* Ensure they don't get too wide */
+    height: 700px; /* Set a fixed height to make them equal */
+    perspective: 1000px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+/* Ensure proper flipping */
+.card:hover {
+    transform: rotateY(180deg);
+}
+
 /* Card Front & Back */
 .card-front, .card-back {
     width: 100%;
@@ -140,7 +174,7 @@ html, body {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Bigger Images */
+/* Card Front */
 .card-front {
     background: white;
     transform: rotateY(0deg);
@@ -149,15 +183,23 @@ html, body {
 
 .card-front img {
     width: 100%;
-    height: 78%; /* Adjusted for bigger cards */
+    height: 78%; /* Adjusted for equal card sizes */
     object-fit: cover;
     border-radius: 12px 12px 0 0;
 }
 
 .card-front p {
+    font-family: 'poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 1.8rem; /* Slightly larger text */
+    padding: 10px;
+}
+
+.card-front p2 {
+    font-size: 3rem;
     font-weight: bold;
-    font-size: 1.4rem; /* Slightly larger text */
-    padding: 12px;
+    font-family: 'fantasy';
+    color: #444;
 }
 
 /* Card Back */
@@ -169,8 +211,8 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.8rem; /* Bigger description text */
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6rem; /* Bigger description text */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Flip on hover */
@@ -188,6 +230,7 @@ html, body {
         height: 380px;
     }
 }
+
 @media (max-width: 600px) {
     .content-blocks {
         grid-template-columns: repeat(1, 1fr);
