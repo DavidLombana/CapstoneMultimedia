@@ -1,4 +1,4 @@
-/* Reset default browser styles */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,20 +7,17 @@
 
 html, body {
     height: 100%;
-    margin: 0; /* Ensure the body and html take up the full height of the viewport */
-}
-
-body {
-    font-family: 'Roboto', sans-serif; /* Default font for body */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5;
     background-image: url('files/229.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;  /* Ensure the image covers the entire page */
+    background-size: cover;
     background-attachment: fixed;
 }
 
-/* Navigation Bar Styles */
+/* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -29,10 +26,10 @@ body {
     background-color: #333;
     color: white;
     padding: 15px 5%;
-    position:absolute;
+    position: absolute;
     top: 0;
     z-index: 100;
-    font-family: 'Poppins', sans-serif; /* Font for navbar */
+    font-family: 'Poppins', sans-serif;
 }
 
 .logo-container {
@@ -54,137 +51,143 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 20px;  /* Adds padding to make the link look like a button */
-    border-radius: 5px;   /* Adds rounded corners */
-    transition: background-color 0.3s, transform 0.2s;  /* Smooth transitions */
-    display: inline-block; /* Ensures the button effect */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
 }
 
-.navbar a:hover, .navbar a:focus {
-    background-color: #e9e8e4;  /* Background color when hovered or focused */
-    color: #333;  /* Text color changes when hovered */
-    transform: scale(1.05);  /* Slightly enlarge the link for a button-like effect */
+.navbar a:hover {
+    background-color: #e9e8e4;
+    color: #333;
+    transform: scale(1.05);
 }
 
-.navbar a:active {
-    background-color: #e4e3e1;  /* Darker shade when clicked (active state) */
-    transform: scale(0.98);  /* Slightly shrink the link when clicked */
-}
-
-/* Logo Middle - Centered on the page */
+/* Logo Middle */
 .logo-middle {
     display: flex;
-    justify-content: center;  /* Centers the content horizontally */
-    align-items: center;      /* Centers the content vertically */
-    height: 80vh;             /* Reduced height to decrease space between logo and content */
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
     padding: 10px 0;
 }
 
 .logo-middle img {
     max-width: 400px;
-    display: block;           /* Ensures the image is treated as a block-level element */
-    margin: 0 auto;           /* Centers the image horizontally */
+    display: block;
+    margin: 0 auto;
 }
 
 /* Services Header */
 .services-header {
     text-align: center;
-    padding: 10px 0;  /* Reduced padding to bring it closer to the content blocks */
-    font-family: 'Poppins', sans-serif; /* Font for header */
+    padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Content Blocks */
+/* Content Blocks - Fixing Grid */
 .content-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 25px; /* More spacing */
+    padding: 50px 15px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Bigger Blocks */
+.block {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 40px 5%;  /* Increased padding to make sure content blocks don't stick to the edges */
-    position: relative;
-    z-index: 1;
+    align-items: center;
+    text-align: center;
 }
 
-.block {
-    width: 400px;
-    height: 500px;
-    perspective: 1000px;
-    cursor: pointer;
-}
-
+/* Bigger Card */
 .card {
-    position: relative;
     width: 100%;
-    height: 100%;
+    max-width: 360px; /* Increased width */
+    height: 420px; /* Increased height */
+    perspective: 1000px;
+    position: relative;
     transform-style: preserve-3d;
-    transition: transform 0.8s;
+    transition: transform 0.6s;
 }
 
-.block:hover .card {
+/* Ensure proper flipping */
+.card:hover {
     transform: rotateY(180deg);
 }
 
+/* Card Front & Back */
 .card-front, .card-back {
-    position: absolute;
     width: 100%;
     height: 100%;
+    position: absolute;
     backface-visibility: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Bigger Images */
 .card-front {
-    background-color: white;
+    background: white;
+    transform: rotateY(0deg);
     overflow: hidden;
 }
 
 .card-front img {
     width: 100%;
-    height: 80%;
+    height: 78%; /* Adjusted for bigger cards */
     object-fit: cover;
+    border-radius: 12px 12px 0 0;
 }
 
 .card-front p {
-    padding: 15px;
-    text-align: center;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Slightly larger text */
+    padding: 12px;
 }
 
+/* Card Back */
 .card-back {
-    background-color: #333;
+    background: #444;
     color: white;
     transform: rotateY(180deg);
-    padding: 30px;
+    padding: 25px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 2.1rem;
-    line-height: 1.6;
+    font-size: 1.8rem; /* Bigger description text */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 10px;
-    }
-    
-    .nav-links {
-        margin-top: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .block {
-        width: 100%;
-        max-width: 300px;
-    }
+/* Flip on hover */
+.block:hover .card {
+    transform: rotateY(180deg);
 }
 
-html {
-    scroll-behavior: smooth;  /* Ensures smooth scrolling */
+/* Responsive Fix */
+@media (max-width: 900px) {
+    .content-blocks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+        max-width: 320px; /* Slightly reduce for tablets */
+        height: 380px;
+    }
 }
-
+@media (max-width: 600px) {
+    .content-blocks {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        max-width: 100%; /* Full width on small screens */
+        height: 350px;
+    }
+}

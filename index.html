@@ -6,6 +6,7 @@
     <title>Car Detailing</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="functions.js"></script>
 </head>
 <body>
@@ -24,11 +25,11 @@
         </div>
     </div>
 
-    <!-- Corrected Logo Middle section -->
-    <div class="logo-middle"> <!-- Opening tag -->
+    <!-- Logo Middle -->
+    <div class="logo-middle">
         <img src="files/Logo.png" alt="Logo-middle">
-    </div> <!-- Closing tag moved here -->
-   
+    </div>
+
     <!-- "Our Services" Header -->
     <div class="services-header">
         <img src="files/OurServices.png" alt="Our Services">
@@ -43,7 +44,7 @@
                     <p>Wash & Wax</p>
                 </div>
                 <div class="card-back">
-                    <p>Give your car the ultimate shine and protection with our Wash & Wax service. A deep clean followed by a premium wax for lasting protection.</p>
+                    <p><i class="fas fa-check"></i> Give your car the ultimate shine and protection with our Wash & Wax service. A deep clean followed by a premium wax for lasting protection.</p>
                 </div>
             </div>
         </div>
@@ -54,7 +55,7 @@
                     <p>Tire shine</p>
                 </div>
                 <div class="card-back">
-                    <p>We restore your tires deep black finish, giving them a sleek, glossy, or satin look while protecting them from cracking, fading, and UV damage.</p>
+                    <p><i class="fas fa-check"></i> We restore your tires' deep black finish, giving them a sleek, glossy, or satin look while protecting them from cracking, fading, and UV damage.</p>
                 </div>
             </div>
         </div>
@@ -65,7 +66,7 @@
                     <p>Foam Bath</p>
                 </div>
                 <div class="card-back">
-                    <p>Experience a luxurious foam bath that removes dirt safely, ensuring a spotless and scratch-free finish.</p>
+                    <p><i class="fas fa-check"></i> Experience a luxurious foam bath that removes dirt safely, ensuring a spotless and scratch-free finish.</p>
                 </div>
             </div>
         </div>
@@ -76,11 +77,33 @@
                     <p>Deep Vacuum</p>
                 </div>
                 <div class="card-back">
-                    <p>Comprehensive interior vacuuming to remove dust, dirt, and debris, leaving your car fresh and clean.</p>
+                    <p><i class="fas fa-check"></i> Comprehensive interior vacuuming to remove dust, dirt, and debris, leaving your car fresh and clean.</p>
                 </div>
             </div>
         </div>
-    </div>
-
+        <div class="block" onclick="flipCard(this)">
+            <div class="card">
+                <div class="card-front">
+                    <img src="files/upholstery.jpg" alt="Service 5">
+                    <p>Upholstery Cleaning</p>
+                </div>
+                <div class="card-back">
+                    <p><i class="fas fa-check"></i> Bring your car’s interior back to life with our deep upholstery cleaning service! We remove stains, dirt, and odors, leaving your seats and fabric surfaces looking and smelling fresh.</p>
+                </div>
+            </div>
+        </div>
+        <div class="block" onclick="flipCard(this)">
+            <div class="card">
+                <div class="card-front">
+                    <img src="files/paintprotection.jpg" alt="Service 6">
+                    <p>Paint protection</p>
+                </div>
+                <div class="card-back">
+                    <p><i class="fas fa-check"></i> Protect your car’s paint from sun damage, dirt, and everyday wear with our premium paint protection service! We apply a high-quality sealant that enhances shine and provides a durable layer of defense.</p>
+                </div>
+            </div>
+        </div>
+        
+       
 </body>
 </html>
