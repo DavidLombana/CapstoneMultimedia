@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Detailing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="files/Logo.png" alt="Logo">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#services">Our Services</a>
+            <a href="packages.html">Our packages</a>
+            <a href="appoiments.html">Make an Appointment</a>
+            <a href="#reviews">Client Reviews</a>
+            <a href="products">Products We Use</a>
+        </div>
+    </div>
+
+      <!-- "Our Services" Header -->
+      <div class="packages-header">
+        <img src="files/packages.png" alt="Our-packages">
+    </div>
+
+    <!-- Service Blocks -->
+    <div class="content-blocks" id="services">
+        <div class="block" onclick="flipCard(this)">
+            <div class="card">
+                <div class="card-front">
+                    <img src="files/carrofinal.JPEG" alt="Service 1">
+                    <p>Basic package - perfect for quick maintenence $50</p>
+                </div>
+                <div class="card-back">
+                    <p><i class="fas fa-check"></i>Exterior Wash – Thorough hand wash to remove dirt and grime.
+                        Wheel & Tire Cleaning – Clean wheels and tires with basic shine.
+                        Interior Vacuum – Quick vacuum of seats and floors.
+                        Windows & Mirrors – Clean inside and outside for a clear view.
+                        Air Freshener – Choose your scent for a fresh interior. </p>
+                </div>
+            </div>
+        </div>
+        <div class="block" onclick="flipCard(this)">
+            <div class="card">
+                <div class="card-front">
+                    <img src="files/Tireshine.JPEG" alt="Service 2">
+                    <p>Tire shine</p>
+                </div>
+                <div class="card-back">
+                    <p><i class="fas fa-check"></i> We restore your tires' deep black finish, giving them a sleek, glossy, or satin look while protecting them from cracking, fading, and UV damage.</p>
+                </div>
+            </div>
+        </div>
+        <div class="block" onclick="flipCard(this)">
+            <div class="card">
+                <div class="card-front">
+                    <img src="files/Foam.JPEG" alt="Service 3">
+                    <p>Foam Bath</p>
+                </div>
+                <div class="card-back">
+                    <p><i class="fas fa-check"></i> Experience a luxurious foam bath that removes dirt safely, ensuring a spotless and scratch-free finish.</p>
+                </div>
+            </div>
+        </div>
+        <div class="block" onclick="flipCard(this)">
+            <div class="card">
+                <div class="card-front">
+                    <img src="files/aspirado.JPEG" alt="Service 4">
+                    <p>Deep Vacuum</p>
+                </div>
+                <div class="card-back">
+                    <p><i class="fas fa-check"></i> Comprehensive interior vacuuming to remove dust, dirt, and debris, leaving your car fresh and clean.</p>
+                </div>
+            </div>
+        </div>
+        

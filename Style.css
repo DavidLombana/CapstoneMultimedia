@@ -85,6 +85,12 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }
 
+.packages-header {
+    text-align: center;
+    padding: 200px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Content Blocks - Fixing Grid */
 .content-blocks {
     display: grid;
