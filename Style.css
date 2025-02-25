@@ -191,3 +191,58 @@ html, body {
         height: 350px;
     }
 }
+
+/* Add these media queries for navbar responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo-container img {
+        height: 80px; /* Smaller logo for mobile */
+    }
+}
+
+/* Add these for services header image responsiveness */
+@media (max-width: 768px) {
+    .services-header img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .logo-middle {
+        height: 60vh; /* Reduce height on mobile */
+    }
+
+    .logo-middle img {
+        max-width: 80%; /* Make logo smaller on mobile */
+    }
+}
+
+/* Adjust font sizes for mobile */
+@media (max-width: 600px) {
+    .card-front p {
+        font-size: 1.2rem;
+    }
+
+    .card-back {
+        font-size: 1.4rem;
+        padding: 15px;
+    }
+}
