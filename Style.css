@@ -183,3 +183,8 @@ body {
         max-width: 300px;
     }
 }
+
+html {
+    scroll-behavior: smooth;  /* Ensures smooth scrolling */
+}
+
