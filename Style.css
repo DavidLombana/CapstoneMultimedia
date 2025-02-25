@@ -5,14 +5,18 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%; /* Ensure the body and html take up the full height of the viewport */
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     background-image: url('files/229.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;  /* Changed to 'cover' to ensure full coverage */
-    background-attachment: scroll;  /* This might be more reliable for mobile */
+    background-size: cover;  /* Ensure the image covers the entire page */
+    background-attachment: scroll;
 }
 
 /* Navigation Bar Styles */
