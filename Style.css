@@ -6,7 +6,8 @@
 }
 
 html, body {
-    height: 100%; /* Ensure the body and html take up the full height of the viewport */
+    height: 100%;
+    margin: 0; /* Ensure the body and html take up the full height of the viewport */
 }
 
 body {
@@ -16,7 +17,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;  /* Ensure the image covers the entire page */
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 /* Navigation Bar Styles */
@@ -74,8 +75,8 @@ body {
     display: flex;
     justify-content: center;  /* Centers the content horizontally */
     align-items: center;      /* Centers the content vertically */
-    height: 100vh;            /* Takes the full height of the viewport */
-    padding: 40px 0;
+    height: 80vh;             /* Reduced height to decrease space between logo and content */
+    padding: 20px 0;
 }
 
 .logo-middle img {
@@ -87,12 +88,7 @@ body {
 /* Services Header */
 .services-header {
     text-align: center;
-    padding: 20px 0;  /* Reduced padding to bring it closer to the content blocks */
-    margin-top: -20px;  /* Pull the services header closer to the content blocks */
-}
-
-.services-header img {
-    max-width: 300px;
+    padding: 10px 0;  /* Reduced padding to bring it closer to the content blocks */
 }
 
 /* Content Blocks */
@@ -101,7 +97,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 20px 5%;
+    padding: 40px 5%;  /* Increased padding to make sure content blocks don't stick to the edges */
     position: relative;
     z-index: 1;
 }
