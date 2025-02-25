@@ -39,7 +39,7 @@ body {
 }
 
 .logo-container img {
-    height: 60px;
+    height: 100px;
     margin-right: 15px;
 }
 
@@ -62,7 +62,6 @@ body {
     background-color: #e9e8e4;  /* Background color when hovered or focused */
     color: #333;  /* Text color changes when hovered */
     transform: scale(1.05);  /* Slightly enlarge the link for a button-like effect */
-
 }
 
 .navbar a:active {
@@ -70,10 +69,26 @@ body {
     transform: scale(0.98);  /* Slightly shrink the link when clicked */
 }
 
+/* Logo Middle - Centered on the page */
+.logo-middle {
+    display: flex;
+    justify-content: center;  /* Centers the content horizontally */
+    align-items: center;      /* Centers the content vertically */
+    height: 100vh;            /* Takes the full height of the viewport */
+    padding: 40px 0;
+}
+
+.logo-middle img {
+    max-width: 300px;
+    display: block;           /* Ensures the image is treated as a block-level element */
+    margin: 0 auto;           /* Centers the image horizontally */
+}
+
 /* Services Header */
 .services-header {
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;  /* Reduced padding to bring it closer to the content blocks */
+    margin-top: -20px;  /* Pull the services header closer to the content blocks */
 }
 
 .services-header img {
