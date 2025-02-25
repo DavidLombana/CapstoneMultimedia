@@ -148,7 +148,7 @@ body {
 .card-front img {
     width: 100%;
     height: auto;
-    max-height: 180px;
+    max-height: 250px;
     border-radius: 10px;
 }
 
@@ -189,4 +189,7 @@ body {
     }
 
     .block {
-        width: 80%; /* More space 
+        width: 80%; /* More space */
+    }
+    
+} 
