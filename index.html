@@ -39,37 +39,44 @@
     </div>
 
     <!-- Service Blocks -->
-    <div class="content-blocks">
-        <div class="block">
-            <img src="files/carrofinal.JPEG" alt="Service 1">
-            <p>Wash and Wax</p>
-        </div>
-        <div class="block">
-            <img src="files/Foam.JPEG" alt="Service 2">
-            <p>Foam</p>
-        </div>
-        <div class="block">
-            <img src="files/aspirado.JPEG" alt="Service 3">
-            <p>Deep Vacuum</p>
+  <!-- Service Blocks -->
+<div class="content-blocks">
+    <div class="block" onclick="flipCard(this)">
+        <div class="card">
+            <div class="card-front">
+                <img src="files/carrofinal.JPEG" alt="Service 1">
+                <p>Wash & Wax</p>
+            </div>
+            <div class="card-back">
+                <p>Give your car the ultimate shine and protection with our Wash & Wax service. A deep clean followed by a premium wax for lasting protection.</p>
+            </div>
         </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const images = document.querySelectorAll(".block img");
+    <div class="block" onclick="flipCard(this)">
+        <div class="card">
+            <div class="card-front">
+                <img src="files/Foam.JPEG" alt="Service 2">
+                <p>Foam Bath</p>
+            </div>
+            <div class="card-back">
+                <p>Experience a luxurious foam bath that removes dirt safely, ensuring a spotless and scratch-free finish.</p>
+            </div>
+        </div>
+    </div>
 
-            images.forEach((img) => {
-                img.addEventListener("mouseenter", function () {
-                    img.style.transform = "scale(1.2)";
-                    img.style.transition = "transform 0.3s ease-in-out";
-                });
-
-                img.addEventListener("mouseleave", function () {
-                    img.style.transform = "scale(1)";
-                });
-            });
-        });
-    </script>
+    <div class="block" onclick="flipCard(this)">
+        <div class="card">
+            <div class="card-front">
+                <img src="files/aspirado.JPEG" alt="Service 3">
+                <p>Deep Vacuum</p>
+            </div>
+            <div class="card-back">
+                <p>Comprehensive interior vacuuming to remove dust, dirt, and debris, leaving your car fresh and clean.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
