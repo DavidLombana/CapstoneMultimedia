@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Default font for body */
     background-color: #f5f5f5;
     background-image: url('files/229.jpg');
     background-repeat: no-repeat;
@@ -32,6 +32,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    font-family: 'Poppins', sans-serif; /* Font for navbar */
 }
 
 .logo-container {
@@ -89,6 +90,7 @@ body {
 .services-header {
     text-align: center;
     padding: 10px 0;  /* Reduced padding to bring it closer to the content blocks */
+    font-family: 'Poppins', sans-serif; /* Font for header */
 }
 
 /* Content Blocks */
