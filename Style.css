@@ -76,11 +76,11 @@ body {
     justify-content: center;  /* Centers the content horizontally */
     align-items: center;      /* Centers the content vertically */
     height: 80vh;             /* Reduced height to decrease space between logo and content */
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .logo-middle img {
-    max-width: 300px;
+    max-width: 400px;
     display: block;           /* Ensures the image is treated as a block-level element */
     margin: 0 auto;           /* Centers the image horizontally */
 }
