@@ -9,7 +9,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f5f5f55b;
     background-image: url('files/229.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -23,13 +23,13 @@ html, body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 15px 5%;
+    background-color: #5e5e5e5b;
+    color: rgb(224, 224, 224);
+    padding: 1px 5%;
     position: absolute;
     top: 0;
     z-index: 100;
-    font-family: 'bangers regular';
+    font-family: 'Poppins', sans-serif;
 }
 
 .logo-container {
@@ -50,12 +50,15 @@ html, body {
 .navbar a {
     color: white;
     text-decoration: none;
+    -webkit-text-stroke: #333;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.2s;
     display: inline-block;
-    font-family: 'bangers regular';
+    font-family: 'poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 200px;
 }
 
 .navbar a:hover {
@@ -69,12 +72,13 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    padding: 10px 0;
+    height: 100vh;
+    padding: 5px 0;
 }
 
 .logo-middle img {
-    max-width: 400px;
+    max-width: 1000px;
+    width: 800px;
     display: block;
     margin: 0 auto;
 }
@@ -82,8 +86,10 @@ html, body {
 /* Services Header */
 .services-header {
     text-align: center;
-    padding: 20px 0;
+    justify-content: center;
+    padding: 5px 0;
     font-family: 'Poppins', sans-serif;
+    text-shadow: #333;
 }
 
 .packages-header {
@@ -96,7 +102,7 @@ html, body {
 .content-blocks {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 25px; /* More spacing */
+    gap: 15px; /* More spacing */
     padding: 50px 15px;
     max-width: 1400px;
     margin: 0 auto;
@@ -156,10 +162,13 @@ html, body {
 }
 
 .card-front p {
-    font-weight:lighter;
-    font-size: 1.4rem; /* Slightly larger text */
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1.8rem; /* Slightly larger text */
     padding: 12px;
     font-family: 'bangers regular';
+    text-align: center;
+    justify-content: center;
 }
 
 /* Card Back */

@@ -23,9 +23,9 @@ html, body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 15px 5%;
+    background-color: #5e5e5e5b;
+    color: rgb(224, 224, 224);
+    padding: 1px 5%;
     position: absolute;
     top: 0;
     z-index: 100;
