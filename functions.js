@@ -36,6 +36,6 @@ function bookAppointment() {
         confirmation.textContent = "Please fill out all fields.";
     } else {
         confirmation.style.color = "green";
-        confirmation.textContent = `Appointment booked for ${name} on ${date} ob ${adress} on ${package} at ${time}.`;
+        confirmation.textContent = `Appointment booked for ${name} on ${date} ot ${adress} with ${package} at ${time}.`;
     }
 }
