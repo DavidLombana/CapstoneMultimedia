@@ -29,7 +29,7 @@ html, body {
     position: absolute;
     top: 0;
     z-index: 100;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'bangers regular';
 }
 
 .logo-container {
@@ -155,9 +155,10 @@ html, body {
 }
 
 .card-front p {
-    font-weight: bold;
+    font-weight:lighter;
     font-size: 1.4rem; /* Slightly larger text */
     padding: 12px;
+    font-family: 'bangers regular';
 }
 
 /* Card Back */
@@ -170,7 +171,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     font-size: 1.8rem; /* Bigger description text */
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'bangers regular';
 }
 
 /* Flip on hover */

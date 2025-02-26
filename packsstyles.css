@@ -189,17 +189,19 @@ html, body {
 }
 
 .card-front p {
-    font-family: 'poppins', sans-serif;
-    font-weight: lighter;
-    font-size: 1.8rem; /* Slightly larger text */
-    padding: 10px;
+    font-family: 'bangers regular';
+    font-weight: bold;
+    color: #141414;
+    font-size: 2.0rem; /* Slightly larger text */
+    padding: 50px;
+    text-align: center;
 }
 
 .card-front p2 {
     font-size: 3rem;
     font-weight: bold;
-    font-family: 'fantasy';
-    color: #444;
+    font-family: 'bangers regular';
+    color: #0a0a0a;
 }
 
 /* Card Back */
@@ -212,7 +214,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     font-size: 1.6rem; /* Bigger description text */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'bangers regular';
 }
 
 /* Flip on hover */
