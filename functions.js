@@ -25,6 +25,8 @@ window.addEventListener('scroll', function() {
 function bookAppointment() {
     let name = document.getElementById("name").value;
     let phone = document.getElementById("phone").value;
+    let adress = document.getElementById("address").value;
+    let package = document.getElementById("package").value;
     let date = document.getElementById("date").value;
     let time = document.getElementById("time").value;
     let confirmation = document.getElementById("confirmation");
@@ -34,6 +36,6 @@ function bookAppointment() {
         confirmation.textContent = "Please fill out all fields.";
     } else {
         confirmation.style.color = "green";
-        confirmation.textContent = `Appointment booked for ${name} on ${date} at ${time}.`;
+        confirmation.textContent = `Appointment booked for ${name} on ${date} ob ${adress} on ${package} at ${time}.`;
     }
 }
