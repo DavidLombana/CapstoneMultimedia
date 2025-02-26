@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Detailing</title>
+    <title>Appoiments</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="packsstyles.css">
+    <link rel="stylesheet" href="appoiments.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="functions.js"></script>
 </head>
@@ -25,3 +25,45 @@
             <a href="products.html">Products We Use</a>
         </div>
     </div>
+
+    <body>
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="adress">Adress:</label>
+            <input type="text" id="adress" placeholder="Enter your adress" required>
+
+            <label for="Package">Select package:</label>
+            <select id="Package" required>
+                <option value="Basic">Basic package</option>
+                <option value="Deluxe">Deluxe package</option>
+                <option value="Premium">Ultimate package</option>
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required>
+            
+            <label for="time">Select Time:</label>
+            <select id="time" required> 
+                <option value="9:00 AM">9:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+                <option value="5:00 PM">5:00 PM</option>
+                <option value="6:00 PM">6:00 PM</option>
+            </select>
+            
+            <button onclick="bookAppointment()">Book Appointment</button>
+            <p class="confirmation" id="confirmation"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>

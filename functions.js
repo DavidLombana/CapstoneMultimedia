@@ -20,3 +20,20 @@ window.addEventListener('scroll', function() {
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative scroll values
 });
+
+
+function bookAppointment() {
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let date = document.getElementById("date").value;
+    let time = document.getElementById("time").value;
+    let confirmation = document.getElementById("confirmation");
+
+    if (name === "" || phone === "" || date === "" || time === "") {
+        confirmation.style.color = "red";
+        confirmation.textContent = "Please fill out all fields.";
+    } else {
+        confirmation.style.color = "green";
+        confirmation.textContent = `Appointment booked for ${name} on ${date} at ${time}.`;
+    }
+}
