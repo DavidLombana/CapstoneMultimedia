@@ -39,3 +39,16 @@ function bookAppointment() {
         confirmation.textContent = `Appointment booked for ${name} on ${date} ot ${adress} with ${package} at ${time}.`;
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const button = document.querySelector(".btn");
+
+    button.addEventListener("click", function() {
+        button.classList.add("clicked");
+
+        // Remove the class after animation duration
+        setTimeout(() => {
+            button.classList.remove("clicked");
+        }, 150);
+    });
+});

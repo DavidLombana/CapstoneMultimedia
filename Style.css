@@ -68,7 +68,7 @@ html, body {
 }
 
 /*HEADER*/
-.h1 {
+.hero-section {
     text-align: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
@@ -102,6 +102,19 @@ html, body {
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.2s;
 }
+
+.btn:active {
+    transform: scale(0.95);
+    background-color: #dfdcdc;
+}
+
+.btn.clicked {
+    transform: scale(0.9);
+    background-color: #bcbaba;
+}
+
+
+
 /* Services Header */
 .services-header {
     text-align: center;
