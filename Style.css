@@ -103,6 +103,11 @@ html, body {
     transition: background-color 0.3s, transform 0.2s;
 }
 
+.btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
 .btn:active {
     transform: scale(0.95);
     background-color: #dfdcdc;
