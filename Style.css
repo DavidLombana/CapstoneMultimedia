@@ -26,7 +26,7 @@ html, body {
     background-color: #5e5e5e5b;
     color: rgb(224, 224, 224);
     padding: 2px 5%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 100;
     font-family: 'Poppins', sans-serif;
@@ -286,6 +286,20 @@ html, body {
         height: 80px; /* Smaller logo for mobile */
     }
 }
+
+/* Initial hidden state */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Visible state */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* Add these for services header image responsiveness */
 @media (max-width: 768px) {
