@@ -64,32 +64,13 @@ html, body {
     transform: scale(1.05);
 }
 
-/* Logo Middle */
-.logo-middle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    padding: 10px 0;
-}
 
-.logo-middle img {
-    max-width: 400px;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Services Header */
-.services-header {
-    text-align: center;
-    padding: 20px 0;
-    font-family: 'Poppins', sans-serif;
-}
 
 .packages-header {
     text-align: center;
     padding: 200px 0;
     font-family: 'Poppins', sans-serif;
+    margin-top: -20px;
 }
 
 /* Content Blocks - Fixing Grid */
@@ -99,7 +80,7 @@ html, body {
     gap: 25px; /* More spacing */
     padding: 50px 15px;
     max-width: 1400px;
-    margin: 0 auto;
+    margin-top: -500px;
 }
 
 /* Bigger Blocks */
@@ -133,7 +114,8 @@ html, body {
     gap: 25px; /* More spacing */
     padding: 50px 15px;
     max-width: 1400px;
-    margin: 0 auto;
+    margin  : 0 auto;
+    margin-top: -200px;
 }
 
 /* Bigger Blocks */

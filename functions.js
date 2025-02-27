@@ -25,20 +25,35 @@ window.addEventListener('scroll', function() {
 function bookAppointment() {
     let name = document.getElementById("name").value;
     let phone = document.getElementById("phone").value;
-    let adress = document.getElementById("address").value;
-    let package = document.getElementById("package").value;
+    let address = document.getElementById("adress").value;
+    let packageSelected = document.getElementById("Package").value;
     let date = document.getElementById("date").value;
     let time = document.getElementById("time").value;
     let confirmation = document.getElementById("confirmation");
 
-    if (name === "" || phone === "" || date === "" || time === "") {
-        confirmation.style.color = "red";
-        confirmation.textContent = "Please fill out all fields.";
-    } else {
-        confirmation.style.color = "green";
-        confirmation.textContent = `Appointment booked for ${name} on ${date} ot ${adress} with ${package} at ${time}.`;
-    }
-}
+    // Define package prices
+    let packagePrices = {
+        "Basic": "$50",
+        "Deluxe": "$80",
+        "Premium": "$120"
+    };
+
+     // Get the selected package price
+     let price = packagePrices[packageSelected];
+
+     // Validate input fields
+     if (name === "" || phone === "" || address === "" || date === "" || time === "") {
+         confirmation.style.color = "red";
+         confirmation.textContent = "Please fill out all fields.";
+     } else {
+         confirmation.style.color = "green";
+         confirmation.innerHTML = `
+             Appointment booked for <strong>${name}</strong> on <strong>${date}</strong> at <strong>${address}</strong> 
+             with <strong>${packageSelected}</strong> package at <strong>${time}</strong>. 
+             <br> <strong>Price: ${price}</strong>
+         `;
+     }
+ }
 
 document.addEventListener("DOMContentLoaded", function() {
     const button = document.querySelector(".btn");
