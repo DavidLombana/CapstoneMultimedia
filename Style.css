@@ -67,6 +67,18 @@ html, body {
     transform: scale(1.05);
 }
 
+/*HEADER*/
+.h1 {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #fcf5f5;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+
 /* Logo Middle */
 .logo-middle {
     display: flex;
@@ -78,7 +90,7 @@ html, body {
 
 .logo-middle img {
     max-width: 1000px;
-    width: 800px;
+    width: 500px;
     display: block;
     margin: 0 auto;
 }
