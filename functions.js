@@ -67,3 +67,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 150);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hiddenElements = document.querySelectorAll(".hidden");
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target); // Stop observing once it's visible
+                }
+            });
+        },
+        { threshold: 0.3 } // Element becomes visible when 30% in view
+    );
+
+    hiddenElements.forEach((element) => observer.observe(element));
+});
+
