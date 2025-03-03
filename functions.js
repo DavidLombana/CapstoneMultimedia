@@ -8,24 +8,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-let lastScrollTop = 0;
-const navbar = document.querySelector('.navbar');
+function flipCard(card) {
+    card.querySelector(".card").classList.toggle("flipped");
+}
 
-window.addEventListener('scroll', function() {
+
+let lastScrollTop = 0;
+const navbars = document.querySelectorAll('.navbar');
+
+window.addEventListener('scroll', function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
-        navbar.style.top = "-80px";  // Hide navbar (adjust based on your navbar height)
-    } else {
-        navbar.style.top = "0";  // Show navbar
-    }
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative scroll values
+    navbars.forEach(navbar => {
+        navbar.style.top = scrollTop > lastScrollTop ? "-80px" : "0";
+    });
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
+
 
 
 function bookAppointment() {
     let name = document.getElementById("name").value;
     let phone = document.getElementById("phone").value;
-    let address = document.getElementById("adress").value;
+    let address = document.getElementById("address").value;
     let packageSelected = document.getElementById("Package").value;
     let date = document.getElementById("date").value;
     let time = document.getElementById("time").value;
